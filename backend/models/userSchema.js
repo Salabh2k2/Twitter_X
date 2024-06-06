@@ -16,9 +16,21 @@ const userSchema = new mongoose.Schema(
       required:true,
       unique:true
     },
+    bookmarks:{
+      type:Array,
+      default:[]
+    },
     password:{
       type:String,
       required:true
+    },
+    followers:{
+      type:Array,
+      default:[]
+    },
+    following:{
+      type:Array,
+      default:[]
     }
     
   },{timestamps:true}
