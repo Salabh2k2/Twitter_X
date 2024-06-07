@@ -1,4 +1,5 @@
 import {User} from "../models/userSchema.js"
+import { Tweet } from "../models/tweetSchema.js"
 import bcryptjs from "bcryptjs"
 import jwt from "jsonwebtoken"
 export const Register = async (req,res) =>{
@@ -183,3 +184,4 @@ export const unfollow = async (req,res) => {
       console.log(error);
   }
 }
+
